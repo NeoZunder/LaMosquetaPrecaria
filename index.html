@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>LA MOSQUETA PRECARIA</h1>
+
+    <div id="Mensaje"></div>
+
+    <div id="Saldo"></div>
+
+    <div id="Mesa">
+      <div id="Copa1" class="Copa">
+        <div id="Pelota1" class="Pelota"></div>
+      </div>
+
+      <div id="Copa2" class="Copa">
+        <div id="Pelota2" class="Pelota"></div>
+      </div>
+
+      <div id="Copa3" class="Copa">
+        <div id="Pelota3" class="Pelota"></div>
+      </div>
+    </div>
+    <div>
+      <div id="Apuesta">
+        <h2>Apuesta:</h2>
+        <input type="number" name="apuesta" id="inputApuesta" />
+        <button id="btnApuesta" name="apuesta">
+          Apostar
+        </button>
+      </div>
+
+      <div id="seleccionarCopa">
+        <h2>Elige La Copa</h2>
+        <button onclick="seleccionarCopa(1)">COPA 1</button>
+        <button onclick="seleccionarCopa(2)">COPA 2</button>
+        <button onclick="seleccionarCopa(3)">COPA 3</button>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
